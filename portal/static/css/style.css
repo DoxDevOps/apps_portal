@@ -1,0 +1,39 @@
+.container {
+    background-color: #7ac8b2;
+    max-width: 90%;
+  }
+
+h1 img {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+html, body {
+    height: 100%;
+  }
+
+  .site-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+  }
+
+  .content-wrapper {
+    flex-grow: 1;
+    background-color: #e8f1f1;
+    }
+
+  .footer {
+    background-color: #f5efed;
+  }
+  .btn-custom {
+    background-color: #f29f33; /* Change the background color here */
+  }
+  .app-icon {
+    width: 70px; 
+    height: 70px; 
+  }
+  
+
+  
+  
