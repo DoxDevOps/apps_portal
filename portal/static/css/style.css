@@ -1,5 +1,5 @@
 .container {
-    background-color: #7ac8b2;
+    background-color:#297272;
     max-width: 90%;
   }
 
@@ -27,13 +27,29 @@ html, body {
     background-color: #f5efed;
   }
   .btn-custom {
-    background-color: #f29f33; /* Change the background color here */
+    background-color: #f29f33; 
   }
   .app-icon {
     width: 70px; 
-    height: 70px; 
+    height: 70px;
+    transition: transform 0.3s ease;
+  }
+  .image-with-margin{
+    height:80px;
+    margin-top: 50px;
+  }
+  .card-body:hover {
+    transform: scale(1.05); 
+  }
+  .title {
+    transition: color 0.3s ease;
   }
   
+  .title:hover {
+    color: rgb(237, 116, 41); 
+  }
+  
+
 
   
   
