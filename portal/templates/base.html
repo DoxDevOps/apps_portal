@@ -24,40 +24,36 @@
           </div>
         </div>
         <h1 class="text-center my-3">EMR Monitoring Portal</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'app_list' %}">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'app_add' %}">Add App</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'app_add' %}">Settings</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
       </div>
-    </header>
+    </header> 
+  <div class="sidenav">
+    <div class="logo">
+      <img src="{% static 'img/logo3.jpg' %}" alt="EGPAF" class="image-with-margin" height="70">
+    </div>
+    <a href="{% url 'app_list' %}">Aplications</a>
+    <a href="{% url 'app_add' %}">Add new App</a>
+    <a href="#" class="notification">
+      <span>Notifications</span>
+      <span class="badge">3</span>
+    </a> 
+    <!-- Add more links as needed -->
+  </div>
+
+  <div style="margin-left: 200px;"> <!-- Add a margin to push the content to the right -->
+    <!-- Your main content goes here -->
+  </div>
     <main class="container-fluid py-5 content-wrapper">
-      <div class= "container">
+      <div class= "container-scrow">
         {% block content %}
         {% endblock %}
       </div>
     </main>
     <div class="row">
           
-      <div class="cell" style="height: 50px; border-top: 1px solid #f57d1a; vertical-align: middle;">
+      <div class="cell" style="height: 60px; vertical-align: middle;">
         
-        <div style="font-size: 22px; color: hsl(180, 9%, 2%); padding-left: 15px; float: left; vertical-align: middle; margin-top: 10px;">
-          Applications Portal
+        <div style="font-size: 22px; color: hsl(180, 9%, 2%); padding-left: 20px; float: left; vertical-align: middle; margin-top: 10px;">
+          EMR Monitoring Portal
         </div>
 
   <!-- Include Bootstrap JavaScript -->
