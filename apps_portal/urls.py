@@ -19,11 +19,14 @@ from django.contrib.auth import views as auth_views
 from portal.views import edit_app
 
 
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('portal/', include('portal.urls')),
     path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
     path('edit_app/<int:app_id>/', edit_app, name='edit_app'),
+    path('api-auth/', include('rest_framework.urls')),
+    path('api', include('api.urls')),
 
 ]
 
